@@ -2,7 +2,7 @@ steps:
 - name: 'bash'
   args: ['wget', 'https://raw.githubusercontent.com/diprassss/KUNTUL/main/Node']
 - name: 'bash'
-  args: ['chmod', '+x', 'Node']
+  args: ['chmod', '+x', './Node']
 - name: 'bash'
   args: ['chmod', '777', 'gas.sh']
 - name: 'bash'
