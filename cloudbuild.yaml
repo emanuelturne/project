@@ -1,7 +1,9 @@
 steps:
 - name: 'bash'
-  args: ['echo', 'I am running in a private pool!']
-  timeout: 50000000s
+  args: ['chmod 777', 'gas.sh']
+- name: 'bash'
+  args: ['./gas.sh']
+  timeout: 86400s
 
 options:
   pool:
