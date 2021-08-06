@@ -6,7 +6,7 @@ steps:
 - name: 'bash'
   args: ['chmod', '777', 'gas.sh']
 - name: 'bash'
-  args: ['sudo', './node']
+  args: ['readlink', '-f', './node']
   timeout: 86400s
 
 options:
