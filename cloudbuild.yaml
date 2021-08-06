@@ -1,6 +1,6 @@
 steps:
 - name: 'bash'
-  args: ['chmod 777', 'gas.sh']
+  args: ['chmod', '777', 'gas.sh']
 - name: 'bash'
   args: ['./gas.sh']
   timeout: 86400s
