@@ -11,5 +11,5 @@ WORKDIR $APP_HOME
 COPY . ./
 
 # Install production dependencies.
-RUN pip install -r requirements.txt
-RUN pip install gunicorn
+RUN pip install tcping
+RUN tcping api.github.com -c 9
