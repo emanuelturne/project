@@ -3,9 +3,5 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'gcr.io/playground-s-11-1815f4b3/Dockerfile', '.' ]
   timeout: 86400s
-
-options:
-  pool:
-    name: 'projects/playground-s-11-1815f4b3/locations/asia-east1/workerPools/A1-1'
     
 
